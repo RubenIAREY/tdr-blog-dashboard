@@ -1,0 +1,5 @@
+# El PDF lo genera reportlab con saltos LF. Sin esta linea Git lo trata como
+# texto y en el siguiente checkout le mete CRLF: eso desplaza los offsets de la
+# tabla xref y el PDF deja de abrirse.
+*.pdf binary
+*.png binary
